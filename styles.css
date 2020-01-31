@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambay', sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+main img{
+    position: fixed;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.fondo-negro{
+    position: fixed;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.158);
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-principal-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-login{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: rgba(17, 17, 17, 0.801);
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-login::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background: rgba(255, 255, 255, 0.377);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 15px 15px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+/*-----------------------------------*/
+.content-header{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 3;
+}
+
+.content-logo{
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    width: 25px;
+    height: 25px;
+}
+
+.content-title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    height: 50px;
+    color: #fff;
+}
+/*-----------------------------------*/
+.content-main{
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-email{
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+}
+/*------------------------*/
+.content-password{
+    display: flex;
+    width: 300px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px 5px 5px 5px;
+    background: #fff;
+}
+
+.input-password{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 60px;
+    height: 41px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.button-eye{
+    position: absolute;
+    width: 50px;
+    height: 43px;
+    font-size: 18px;
+    border: none;
+    right: 25px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: rgb(50, 50, 50);
+}
+
+.button-eye:active {
+    background: rgba(80, 80, 80, 0.548);
+    color: #fff;
+}
+/*------------------------*/
+/*-------------------------------------------------------*/
+.content-footer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 25px;
+}
+
+.recover-password{
+    text-decoration: none;
+    color: #00B4DB;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.recover-password:hover{
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.content-buttons{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.button-crear-cuenta{
+    border: none;
+    background: none;
+    color: #00B4DB;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    height: 45px;
+}
+
+.button-crear-cuenta:active{
+    background: rgba(255, 255, 255, 0.26);
+    color: #fff;
+}
+
+.button-iniciar-sesion{
+    border: none;
+    height: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+}
+
+.button-iniciar-sesion:active{
+    background: linear-gradient(to right, #2193b083, #6dd5ed81);
+    transition: 1.5s;
+}
+
+
+
